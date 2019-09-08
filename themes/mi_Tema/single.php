@@ -2,7 +2,6 @@
 
 <main class="main_container">
 		<section class="main_container__heroproj">
-			<?php the_post_thumbnail('main_container__thumb', array('class' => 'main_container__singlethumb')) ?>
 		</section>
 		<section class="main_container__nameproj">
 			<h2 class="main_container__titleproj">
@@ -12,26 +11,31 @@
 		<section class="main_container__descproj">
 			<div class="main_container__credits">
 				<ul class="main_container__creditslist">
-					<li class="main_container__creditsitem"><?php the_field('valor_field_name')  ?> <span class="main_container__creditsitem--info">Nike</span></li>
-					<li class="main_container__creditsitem">Directed and produced by: <span class="main_container__creditsitem--info">Lorem ipsum dolor sit amet</span></p></li>
-					<li class="main_container__creditsitem">Year: <span class="main_container__creditsitem--info">Lorem ipsum dolor sit amet</span></li>
-					<li class="main_container__creditsitem">Services: <span class="main_container__creditsitem--info">Lorem ipsum dolor sit amet</span></li>
-					<li class="main_container__creditsitem">Credits: <span class="main_container__creditsitem--info">Lorem ipsum dolor sit amet</span></li>
+					<li class="main_container__creditsitem">Client: <span class="main_container__creditsitem--info"><?php the_field('client') ?></span></li>
+					<li class="main_container__creditsitem">Directed and produced by: <span class="main_container__creditsitem--info"><?php the_field('directed_and_produced_by') ?></span></p></li>
+					<li class="main_container__creditsitem">Year: <span class="main_container__creditsitem--info"><?php the_field('year') ?></span></li>
+					<li class="main_container__creditsitem">Services: <span class="main_container__creditsitem--info"><?php the_field('services') ?></span></li>
+					<li class="main_container__creditsitem">Credits: <span class="main_container__creditsitem--info"><?php the_field('credits') ?></span></li>
 				</ul>
 			</div>
 			<div class="main_container__overview">
 				<span class="main_container__overviewtitle">Overview</span>
-				<p class="main_container__overviewtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officia unde doloremque non reprehenderit doloribus temporibus dolores distinctio labore nemo alias reiciendis nostrum tempore, asperiores, nihil eius ea necessitatibus culpa.</p>
+				<p class="main_container__overviewtext"><?php the_field('overview') ?></p>
 				<span class="main_container__overviewtitle">Proyecto</span>
-				<p class="main_container__overviewtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perspiciatis repudiandae reprehenderit quidem quis quae excepturi, mollitia qui accusamus doloremque nostrum odit corporis labore ullam ut totam aspernatur exercitationem.</p>
+				<p class="main_container__overviewtext"><?php the_field('proyecto') ?></p>
 			</div>
 		</section>
 		<section class="main_container__stills">
 			<ul id="gallery" class="main_container__masonry">
-			  <li class="main_container__frame--halfwidth tomato">1</li>
-			  <li class="main_container__frame--halfwidth slateBlue">2</li>
-			  <li class="main_container__frame--halfwidth orange">3</li>
-			  <li class="main_container__frame--halfwidth gray">4</li>
+			  <li class="main_container__frame--halfwidth">
+			  	<img class="main_container__imagestill" src="<?php the_field('first-still'); ?>" />
+			  </li>
+			  <li class="main_container__frame--halfwidth"><img class="main_container__imagestill" src="<?php the_field('second-still'); ?>" />
+			  </li>
+			  <li class="main_container__frame--halfwidth"><img class="main_container__imagestill" src="<?php the_field('third-still'); ?>" />
+			  </li>
+			  <li class="main_container__frame--halfwidth"><img class="main_container__imagestill" src="<?php the_field('fourth-still'); ?>" />
+			  </li>
 		</ul>
 		</section>
 		<section class="main_container__pagination">
