@@ -34,3 +34,5 @@ class Filter {
 		return strpos( $i, $this->threshold ) === false ? $i : false;
 	}
 }
+
+

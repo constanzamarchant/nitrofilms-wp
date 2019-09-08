@@ -32,12 +32,17 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 	add_image_size( 'slideshow', 800, 600, true );			// Personalización del tamaño del slideshow
 	add_image_size( 'custom_logo', 800, 600, true );		// Personalización del tamaño del logo
-	add_image_size( 'thumb-smallsquare', 200, 200, true );		// Personalización del tamaño thumb
-	add_image_size( 'thumb-bigsquare', 400, 400, true );		// Personalización del tamaño thumb
-	add_image_size( 'thumb-rectvert', 300, 600, true );		// Personalización del tamaño thumb
-	add_image_size( 'thumb-recthor', 600, 600, true );		// Personalización del tamaño thumb 
-
 
 	add_filter( 'image_size_names_choose', 'dl_image_sizes' );
 
+}
+
+function portafolio_featured_image_size() {
+    add_post_type_support( 'portafolio', 'thumbnails' );
+    set_post_thumbnail_size( 'thumb-smallsquare', 400, 400, true );		// Personalización del tamaño thumb
+	set_post_thumbnail_size( 'thumb-bigsquare', 800, 800, true );		// Personalización del tamaño thumb
+	set_post_thumbnail_size( 'thumb-rectvert', 400, 800, true );		// Personalización del tamaño thumb
+	set_post_thumbnail_size( 'thumb-recthor', 800, 400, true );		// Personalización del tamaño thumb +
+
+	add_action( 'init', 'portafolio_featured_image_size' );
 }
