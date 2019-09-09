@@ -5,9 +5,9 @@
 			<div class="main_footer__rights"><span class="main_footer__rightstext">© NitroFilms 2019 All rights reserved</span></div>
 			<div class="main_footer__social">
 				<ul class="main_footer__socialist">
-					<li class="main_footer__socialicon"><a href="#" class="main_footer__socialink"><i class="fab fa-facebook-square"></i></a></li>
-					<li class="main_footer__socialicon"><a href="#" class="main_footer__socialink"><i class="fab fa-instagram"></i></a></li>
-					<li class="main_footer__socialicon"><a href="#" class="main_footer__socialink"><i class="fab fa-vimeo"></i></li></a>
+					<li class="main_footer__socialicon"><a href="https://www.facebook.com/nitrofilms.tv/" class="main_footer__socialink"><i class="fab fa-facebook-square"></i></a></li>
+					<li class="main_footer__socialicon"><a href="https://www.instagram.com/nitrofilms.tv" class="main_footer__socialink"><i class="fab fa-instagram"></i></a></li>
+					<li class="main_footer__socialicon"><a href="https://vimeo.com/nitrofilms" class="main_footer__socialink"><i class="fab fa-vimeo"></i></li></a>
 				</ul>
 			</div>
 		</div>

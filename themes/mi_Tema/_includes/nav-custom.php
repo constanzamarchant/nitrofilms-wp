@@ -78,6 +78,13 @@
 							'menu_class'		=> 'main_nav__list',
 						) ); ?>
 					<?php } ?>
+				</ul>
+
+				<ul class="main_nav__socialist">
+					<li class="main_nav__socialitem"><a href="https://www.facebook.com/nitrofilms.tv/" class="main_nav__socialink"><i class="fab fa-facebook-square"></i></a></li>
+					<li class="main_nav__socialitem"><a href="https://www.instagram.com/nitrofilms.tv" class="main_nav__socialink"><i class="fab fa-instagram"></i></a></li>
+					<li class="main_nav__socialitem"><a href="https://vimeo.com/nitrofilms" class="main_nav__socialink"><i class="fab fa-vimeo"></i></a></li>
+				</ul>
 			</div>
 		</nav>
 	</header>

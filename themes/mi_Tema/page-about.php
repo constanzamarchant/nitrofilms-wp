@@ -9,7 +9,8 @@
 			<h4 class="main_container__textcall">Let's work <span class="main_container__break">together!</span></h4>
 		</section>
 
-		<section class="ig_container"></section>
+		<section class="ig_container"><?php echo do_shortcode( '[jr_instagram id="2"]'); ?>
+		</section>
 		
 	</main>
 
