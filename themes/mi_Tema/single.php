@@ -2,6 +2,8 @@
 
 <main class="main_container">
 		<section class="main_container__heroproj">
+			<img class="main_container__imagestill" src="<?php the_field('imagen_destacada'); ?>" />
+			<div class="main_container__iframe" data="" type=""><?php the_field('video_destacado'); ?></div>
 		</section>
 		<section class="main_container__nameproj">
 			<h2 class="main_container__titleproj">
@@ -26,7 +28,7 @@
 			</div>
 		</section>
 		<section class="main_container__stills">
-			<ul id="gallery" class="main_container__masonry">
+			<ul id="gallery" class="main_container__stillist">
 			  <li class="main_container__frame--halfwidth">
 			  	<img class="main_container__imagestill" src="<?php the_field('first-still'); ?>" />
 			  </li>
@@ -39,9 +41,9 @@
 		</ul>
 		</section>
 		<section class="main_container__pagination">
-			<div class="main_container__prev"><a class="main_container__paglink" href="#"><i class="fas fa-chevron-left fa-2x"></i></a></div>
+			<div class="main_container__prev"><?php previous_post_link( '<strong>%link</strong>'); ?></div>
 			<div class="main_container__thanks"><h5>Thanks for watching!</h5></div>
-			<div class="main_container__next"><a class="main_container__paglink" href="#"><i class="fas fa-chevron-right fa-2x"></i></a></div>
+			<div class="main_container__next"><?php next_post_link( '<strong>%link</strong>' ); ?></div>
 		</section>
 	</main>
 
