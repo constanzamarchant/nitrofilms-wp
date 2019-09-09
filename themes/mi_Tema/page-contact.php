@@ -29,6 +29,9 @@
 				<p class="main_container__text">We are looking for international representation please write to: <span>info@nitrofilms.tv</span></p>
 			</div>
 		</section>
+		<section class="main_container__form">
+			<?php echo do_shortcode( '[contact-form-7 id="178" title="Contacto"]' ); ?>
+		</section>
 		<section class="main_container__map">
 			<?php echo do_shortcode( '[wpgmza id="1"]' ); ?>
 		</section>
