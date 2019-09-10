@@ -20,5 +20,4 @@
 		<p>No hay elementos</p>
 	<?php } wp_reset_query(); ?>
 
-	<?php get_sidebar() ?>
 <?php get_footer() ?>

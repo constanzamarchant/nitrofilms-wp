@@ -28,7 +28,6 @@
 					<?php the_post_thumbnail('main_container__thumb', array('class' => 'main_container__image')) ?>
 					<object class="main_container__caption">
 						<span class="main_container__captiontitle"><?php the_title(); ?></span>
-						<a class="main_container__captiontext" href="#" target="_blank"><?php the_category(' / '); ?></a>
 					</object>
 				</a>
 			</li>
